@@ -1,0 +1,25 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+  "title": "Vídeo node",
+  "description": "Descrição do vídeo",
+  "duration": 180
+}
+
+###
+GET http://localhost:3333/videos
+# GET http://localhost:3333/videos?search=node
+
+###
+PUT http://localhost:3333/videos/d353cb3b-45e5-40d8-9096-49c0f7f5f262
+Content-Type: application/json
+
+{
+  "title": "Node.js do zero",
+  "description": "Como sair do zero em Node.js em uma aula",
+  "duration": 200
+}
+
+###
+DELETE http://localhost:3333/videos/d353cb3b-45e5-40d8-9096-49c0f7f5f262
